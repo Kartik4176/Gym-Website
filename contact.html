@@ -1,0 +1,27 @@
+<div class="container-fluid mb-3 px=0">
+    <img src="https://media.istockphoto.com/photos/contact-us-concept-icon-telephone-address-and-email-on-blue-3d-picture-id1312566254" width="1350" height="500" class="d-block w-100" alt="...">
+</div>
+    
+<div class="container mb-3">
+    <h1 class="text-center">Contact Us</h1>
+    <form method="post" action="/contact">
+      {% csrf_token %}
+      <div class="form-group mb-3">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+      </div>
+      <div class="form-group mb-3">
+        <label for="email">Email Address</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address">
+      </div>
+      <div class="form-group mb-3">
+        <label for="phone">Mobile No</label>
+        <input type="phone" class="form-control" id="phone" name="phone" placeholder="Enter your mobile number">
+      </div>
+      <div class="form-group mb-3">
+        <label for="desc" class="form-label">Why you want to contact me?</label>
+        <textarea class="form-control" id="desc" rows="3" name="desc"></textarea>
+      </div>
+      <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+</div>
